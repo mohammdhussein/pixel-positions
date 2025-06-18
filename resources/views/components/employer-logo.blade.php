@@ -1,5 +1,5 @@
-@props(['width' => '90'])
+@props(['employer','width' => '90'])
 <div {{ $attributes }}>
 
-    <img src="https://placehold.co/{{$width}}" class="rounded-xl" alt="">
+    <img src="{{asset('storage/'.$employer->logo)}}" width="{{$width}}" class="rounded-xl" alt="">
 </div>
